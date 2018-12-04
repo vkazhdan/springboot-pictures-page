@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pictures</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    Show <a href="/pictures">All Pictures</a>
+
+    <form action="/pictures" method="get">
+        Search Pictures By Heading: <input name="query" th:value="${query}" placeholder="Search Query"/>
+        <button type="submit">Search</button>
+    </form>
+
+    <div th:each="picture : ${picturesList}">
+        <br/>
+        <a th:href="${picture.url}">
+            <img th:src="${picture.url}" width="200px"/>
+        </a>
+        <div>
+            <b th:text="${picture.heading}"/>
+        </div>
+    </div>
+</body>
+</html>
