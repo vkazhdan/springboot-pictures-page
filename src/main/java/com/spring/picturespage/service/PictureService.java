@@ -17,11 +17,11 @@ public class PictureService {
 
 	@PostConstruct
 	private void init() {
-		picturesList.add(new Picture("Sea Cafe", "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"));
-		picturesList.add(new Picture("Sea Wave", "https://pattayaone.news/wp-content/uploads/2018/06/wave-2211925_960_720.jpg"));
-		picturesList.add(new Picture("Moon", "https://cdn.vox-cdn.com/thumbor/YJhfHa3VIYPvLAybdpmqXeR0E68=/0x0:4000x2411/1820x1213/filters:focal(1680x886:2320x1526):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/57941277/870390220.jpg.0.jpg"));
-		picturesList.add(new Picture("People Friends", "https://image.freepik.com/free-photo/multiracial-group-of-young-people-taking-selfie_1139-1032.jpg"));
-		picturesList.add(new Picture("People Faces", "http://kevin-moseri.de/wp-content/uploads/2015/12/inclusion.jpg"));
+		picturesList.add(new Picture("Sea Cafe", "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", "#sea #cafe"));
+		picturesList.add(new Picture("Sea Wave", "https://pattayaone.news/wp-content/uploads/2018/06/wave-2211925_960_720.jpg", "#sea"));
+		picturesList.add(new Picture("Moon", "https://cdn.vox-cdn.com/thumbor/YJhfHa3VIYPvLAybdpmqXeR0E68=/0x0:4000x2411/1820x1213/filters:focal(1680x886:2320x1526):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/57941277/870390220.jpg.0.jpg", "#moon"));
+		picturesList.add(new Picture("People Friends", "https://image.freepik.com/free-photo/multiracial-group-of-young-people-taking-selfie_1139-1032.jpg", "#people #together"));
+		picturesList.add(new Picture("People Faces", "http://kevin-moseri.de/wp-content/uploads/2015/12/inclusion.jpg", "#people #together"));
 	}
 
 	public List<Picture> getAllPictures() {
